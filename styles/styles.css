@@ -1,0 +1,674 @@
+html, 
+body, header, ul, main, h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main div figure img{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse; 
+}
+
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:10px; top:0px;}
+    50%  { left:10px; top:10px;}
+    75%  { left:0px; top:10px;}
+    100% { left:0px; top:0px;}
+}
+
+.main{
+    background-color: green;
+
+}
+
+.main:nth-child(1) div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#page-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#page-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+
+}
+
+body main {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Ecologically_grown_vegetables.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body main div{
+    text-align: center;
+    width: 80%;
+    background-color: black;
+    opacity: 60%;
+    color: white;
+    height: 50vh;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+
+body main div .texto {
+    color:white;
+    font-family: 'Courgette', cursive;
+    margin-top: 30px;
+
+}
+
+body main div h1 {
+    margin-bottom: 50px;
+}
+
+#buy {
+    background-color: green;
+    opacity: 100%;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    padding: 5px;
+    font-family: 'Courgette', cursive;
+    border-style: double;
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-weight: 900;
+    line-height: 1;
+}
+
+#buy:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    animation-play-state: paused;
+
+}
+
+
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 seagreen, 
+            0 0 0 brown, 
+            0 0 0  orange 
+            0 0 0 #fecb4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 seagreen, 
+            0 0.25em 0 brown, 
+            0 -0.125em 0 orange, 
+            0 -0.25em 0 #fecb4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 seagreen, 
+            0 -0.125em 0 brown, 
+            0 0.0625em 0 orange, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 seagreen, 
+            0 0.0625em 0 brown, 
+            0 -0.03125em 0 orange, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 seagreen, 
+            0 0 0 brown, 
+            0 0 0 orange, 
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+/*--------------------------*/
+
+
+.container{
+    width: 100%;
+    height: 60vh;
+    border-top: 70px solid green;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.col:nth-child(1){
+    width: 25%;
+    background-image: url('organic-vegitables.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    height: 50vh;
+    margin: 20px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.col:nth-child(2){
+    width: 25%;
+    background-image: url('organic-fruits.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    height: 50vh;
+    margin: 20px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col:nth-child(3){
+    width: 25%;
+    background-image: url('organic-grain.jpg');
+    background-position: center;
+    background-size: auto 100%;
+    height: 50vh;
+    margin: 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.col h2{
+    background-color: rgba(0,0,0,0.5);
+    color: azure;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+.col button{
+    width: 100%;
+    border: none;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    background-color: green;
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 230px;
+}
+
+.col button:hover{
+    background-color: azure;
+    color: green;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------*/
+#container2{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    height: 480px;
+}
+.products2{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 100%;
+}
+
+.products2 :nth-child(1){
+    height: 200px;
+    text-align: center;
+}
+
+.products2 :nth-child(2){
+    height: 220px;
+    text-align: center;
+
+}
+.products2 :nth-child(3){
+    height: 200px;
+    text-align: center;
+    margin-right: 0;
+
+}
+.products2 :nth-child(1) h2 {
+    font-size: 15px;
+    margin: 0;
+    height: 0;
+    margin-top: 5px;
+}
+.products2 :nth-child(2) h2 {
+    font-size: 15px;
+    margin: 0;
+    height: 0;
+    margin-top: 5px;
+
+}
+.products2 :nth-child(3) h2 {
+    font-size: 15px;
+    margin: 0;
+    height: 0;
+    margin-top: 5px;
+
+}
+
+.products2 :nth-child(1) a {
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    }
+
+.products2 :nth-child(1) h3 {
+    height: 0;
+    margin: 0;
+    margin-top: 20px;
+    color:darkred;
+    font-size: 20px;
+}
+
+.products2 :nth-child(2) a {
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    border: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+
+
+}
+    
+.products2 :nth-child(2) h3 {
+    height: 0;
+    margin: 0;
+    margin-top: 20px;
+    color:darkred;
+    font-size: 20px;
+
+}
+
+.products2 :nth-child(3) h3 {
+    height: 0;
+    margin: 0;
+    margin-top: 20px;
+    color:darkred;
+    font-size: 20px;
+
+}
+
+.products2 :nth-child(3) a {
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+.texto2{
+    text-align: center;
+    width: center;
+}
+
+.texto2 h2 {
+    margin: 0;
+    font-size: 30px;
+    color: green;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    
+}
+
+.texto2 h1{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: darkred;
+    font-family: 'Courgette', cursive;
+
+}
+
+#container3{
+    width: 100%;
+    height: 100vh;
+    background-color: darkred;
+    margin-top: 40px;
+}
+
+
+#know-more{
+    width: 100%;
+    height: 60vh;
+    background-image: url('know-more3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+#filter{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    color:white;
+    display: flex;
+    align-items: flex-end;
+}
+
+#filter div {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+#filter div h2 {
+    font-size: 30px;
+    font-family:'Amatic SC', cursive;
+    
+}
+
+#filter div h1{
+    font-family: 'Courgette', cursive;
+}
+
+#filter div p{
+    font-size: 18px;
+}
+
+#filter div button {
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+
+#filter div button:hover {
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: double;
+}
+
+    
+
+#subscribe{
+    width: 100%;
+    height: 40vh;
+    background-image: url('banner_subscribe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+#subscribe div{
+    width: 50%;
+    height: 180px;
+    background-color: none;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+#subscribe div h2{
+    font-size: 24px;
+    font-family: 'Amatic SC', cursive;
+}
+
+#subscribe div h1{
+    font-family: 'Courgette', cursive;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+#subscribe div input{
+    height: 30px;
+    width: 40%;
+    border: none;
+    border-radius: 50px;
+    color:lightslategrey;
+    padding-left: 10px;
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+}
+
+#subscribe div button{
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+#subscribe div button:hover{
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: double;
+    opacity: 1;
+}
+
+.container4{
+    margin-top: 30px;
+}
+
+/* ----------- footer ------------ */
+
+.container-footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 88vh;
+    background-image: url('footer3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container-footer .filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container-footer .filter .row:nth-child(1){
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer .filter .row:nth-child(1) img{
+    width: 30%;
+    margin-top: 50px;
+}
+
+.container-footer .filter .row:nth-child(2){
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(1){
+    width: 25%;
+    padding: 20px 10px;
+    margin-left: 40px;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(1) ul{
+    list-style: none;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(1) ul li{
+    padding: 5px 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    transition: ease-in-out .5s;
+    color: white;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(1) ul li:nth-child(1){
+    color: green;
+    font-weight: bolder;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(1) ul li:hover{
+    color: #f63812;
+    cursor: pointer;
+}
+
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(2){
+    width: 25%;
+    padding: 20px;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(2) ul{
+    list-style: none;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(2) ul li{
+    padding: 5px 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    transition: ease-in-out .5s;
+    color: white;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(2) ul li:hover{
+    color: #f63812;
+    cursor: pointer;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(3){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(3) form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(3) form label{
+    font-family: 'Courgette', cursive;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(3) form input{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    font-size: 1.2rem;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(3) form button{
+    width: 60%;
+    padding: 7px 12px;
+    margin-top: 30px;
+    background-color: green;
+    color: azure;
+    border: none;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.container-footer .filter .row:nth-child(2) .col-30:nth-child(3) form button:hover{
+    background-color:green;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.container-footer .filter .row:nth-child(3){
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-footer .filter .row:nth-child(3) img{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.container-footer .filter .row:nth-child(3) span{
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #020202;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.logo{
+    height: 160px;
+    width: 180px;
+    margin-top: 10px;
+}
+
+#logo{
+    height: 160px;
+    width: 180px;
+    margin-top: 10px;
+}
+/* ----------- end footer ------------ */
+
+
