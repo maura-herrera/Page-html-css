@@ -220,6 +220,7 @@ body main div h1 {
     font-size: 30px;
     font-family: 'Courgette', cursive;
     text-align: center;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .col button{
@@ -231,7 +232,7 @@ body main div h1 {
     color: azure;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 230px;
+    margin-top: 232px;
 }
 
 .col button:hover{
